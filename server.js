@@ -2,8 +2,9 @@ const { response } = require('express')
 const express = require('express')
 const app = express()
 const PORT= 8000
+const cors =require('cors')
 
-
+app.use(cors())
 const games ={
 "horizon zero dawn":{
 "release":"2017",
